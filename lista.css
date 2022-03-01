@@ -6,8 +6,8 @@ div {
 .foaie {
   background: repeating-linear-gradient(
     0deg,
-    #FFFBD2,
-    #FFFBD2 20px,
+    #ccc576,
+    #ccc576 20px,
     rgba(0, 0, 0, 0.2) 20px,
     rgb(255 251 210) 21px
   );
