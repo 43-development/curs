@@ -1,0 +1,54 @@
+div {
+  margin: 10px;
+  padding: 10px;
+}
+
+.foaie {
+  background: repeating-linear-gradient(
+    0deg,
+    #FFFBD2,
+    #FFFBD2 20px,
+    rgba(0, 0, 0, 0.2) 20px,
+    rgb(255 251 210) 21px
+  );
+}
+
+.lista > input {
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Gochi Hand', cursive;
+}
+
+.magazin > input[type="text"] {
+  font-size: 200%;
+  text-decoration: underline;
+  font-family: 'Sacramento', cursive;
+}
+
+input:not([type="checkbox"]):not([value="adauga"]) {
+  background-color: transparent;
+  border: 0;
+}
+
+.produs > input[type="text"] {
+  font-style: italic;
+  font-family: 'Gochi Hand', cursive;
+}
+
+.produs > input[type="number"] {
+  width: 35px;
+  font-family: 'Sacramento', cursive;
+}
+
+.lista > input {
+  width: 100%;
+}
+
+input[type="text"] {
+  font-family: 'Gochi Hand', cursive;
+}
+
+.form-select {
+  width: 70px;
+  display: inline-block;
+}
