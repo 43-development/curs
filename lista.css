@@ -25,7 +25,7 @@ div {
   font-family: 'Sacramento', cursive;
 }
 
-input:not([type="checkbox"]):not([value="adauga"]):not([class=form-control]) {
+input:not([type="checkbox"]):not([value="adauga"]):not(.form-control) {
   background-color: transparent;
   border: 0;
 }
