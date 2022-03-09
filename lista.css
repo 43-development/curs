@@ -52,3 +52,7 @@ input[type="text"] {
   width: 70px;
   display: inline-block;
 }
+.bg-success {
+  --bs-bg-opacity: 1;
+  width: 30%
+  }
