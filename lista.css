@@ -33,6 +33,7 @@ input:not([type="checkbox"]):not([value="adauga"]) {
 .produs > input[type="text"] {
   font-style: italic;
   font-family: 'Gochi Hand', cursive;
+  padding-left: 70px;
 }
 
 .produs > input[type="number"] {
