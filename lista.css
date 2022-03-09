@@ -25,7 +25,7 @@ div {
   font-family: 'Sacramento', cursive;
 }
 
-input:not([type="checkbox"]):not([value="adauga"]) {
+input:not([type="checkbox"]):not([value="adauga"]):not([value="adauga magazin nou"]) {
   background-color: transparent;
   border: 0;
 }
