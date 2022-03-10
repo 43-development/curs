@@ -56,3 +56,7 @@ input[type="text"] {
   --bs-bg-opacity: 1;
   width: 30%
   }
+
+  .produs{
+    border-style: solid;
+  }
