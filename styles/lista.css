@@ -1,0 +1,40 @@
+{
+  "div": {
+    "margin": "10px",
+    "padding": "10px"
+  },
+  "foaie": {
+    "background": "repeating-linear-gradient(\n    0deg,\n    #ccc576,\n    #ccc576 20px,\n    rgba(0, 0, 0, 0.2) 20px,\n    rgb(255 251 210) 21px\n  )"
+  },
+  "lista___input": {
+    "width": "100%"
+  },
+  "magazin___input_type__text": {
+    "fontSize": "200%",
+    "textDecoration": "underline",
+    "fontFamily": "'Sacramento', cursive"
+  },
+  "input_not__type__checkbox____not__value__adauga____not__form_control__not__value__adauga_magazin_nou": {
+    "backgroundColor": "transparent",
+    "border": "0"
+  },
+  "produs___input_type__text": {
+    "fontStyle": "italic",
+    "fontFamily": "'Gochi Hand', cursive"
+  },
+  "produs___input_type__number": {
+    "width": "35px",
+    "fontFamily": "'Sacramento', cursive"
+  },
+  "input_type__text": {
+    "fontFamily": "'Gochi Hand', cursive"
+  },
+  "form_select": {
+    "width": "70px",
+    "display": "inline-block"
+  },
+  "bg_success": {
+    "-bsBgOpacity": "1",
+    "width": "30%"
+  }
+}
