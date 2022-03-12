@@ -68,6 +68,11 @@ const Home: NextPage = () => {
     }
   ]
 
+const toate_magazinele = (un_magazin) =>
+<div className="stores collapse show" id="stores">
+  {magazin(magazine[un_magazin].titlu, magazine[un_magazin].produse)}
+</div>
+
   return (
     <>
       <Head>
@@ -80,10 +85,9 @@ const Home: NextPage = () => {
         <div className="lista titlu h1" data-bs-toggle="collapse" data-bs-target="#stores">
           <input type="text" className="shadow p-3 mb-5 bg-white rounded" value="Lista mea" />
         </div>
-        <div className="stores collapse show" id="stores">
-          {magazin('Mega Image', ["Carne", "Lapte", "Branza", "Faina", "Sampon", 'Banane'])}
-          {magazin('Lidl', ['Bormasina', 'Jeleuri', 'Pasta', 'Paine', 'Cheie de 13'])}
-          {magazin('Kaufland', ['Salata', 'Rosii'])}
+          {toate_magazinele(0)}
+          {toate_magazinele(1)}
+          {toate_magazinele(2)}
           <div>
             <div className="magazin">
               <input type="text" />
@@ -91,7 +95,6 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   )
 }
