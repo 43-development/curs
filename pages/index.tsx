@@ -69,6 +69,12 @@ const Home: NextPage = () => {
     }
   ]
 
+  const shops = (supermarket) => (
+    <div>
+      {magazin(magazine[supermarket].titlu, magazine[supermarket].produse)}
+    </div>
+  );
+
   return (
     <>
       <Head>
@@ -82,9 +88,9 @@ const Home: NextPage = () => {
           <input type="text" className="shadow p-3 mb-5 bg-white rounded" value="Lista mea" />
         </div>
         <div className="stores collapse show" id="stores">
-          {magazin('Mega Image', ["Carne", "Lapte", "Branza", "Faina", "Sampon", 'Banane'])}
-          {magazin('Lidl', ['Bormasina', 'Jeleuri', 'Pasta', 'Paine', 'Cheie de 13'])}
-          {magazin('Kaufland', ['Salata', 'Rosii'])}
+          {shops(0)}
+          {shops(1)}
+          {shops(2)}
           <div>
             <div className="magazin">
               <input type="text" />
