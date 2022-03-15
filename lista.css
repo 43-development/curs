@@ -4,12 +4,12 @@ div {
 }
 
 .foaie {
-  background: repeating-linear-gradient(
+  background: (
     0deg,
-    #ccc576,
-    #ccc576 20px,
+    #faa8e8,
+    #eb83d4 20px,
     rgba(0, 0, 0, 0.2) 20px,
-    rgb(255 251 210) 21px
+    rgb(255, 179, 234) 21px
   );
 }
 
