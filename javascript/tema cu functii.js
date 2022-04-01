@@ -21,7 +21,7 @@ var functia3 = function (arg1, arg2)
         var d = functia2AdunareSiScadere (arg1, arg2, u)    
         return  d
     }
- var rezultat_complicat= functia3(7,1)
+ var rezultat_complicat= functia3(7,1);
  var rezultat_complicat2 = functia3(14,6)
  var rezultat_complicat3 = functia3(10,5)
 
