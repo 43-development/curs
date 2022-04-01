@@ -10,7 +10,7 @@ functia1CareEProdusulArgumentelor(10,11)
 
 var functia2AdunareSiScadere = function (termen1, termen2, scazator) 
     {
-        return "a = 5 , b = 6, c = 7, d= a+b - c. d=? " + termen1 + termen2 - scazator
+        return "a = 5 , b = 6, c = 7, d= a+b - c. d=? " +( termen1 + termen2 - scazator);
     }
 
 functia2AdunareSiScadere (5,6,7)
@@ -25,7 +25,7 @@ var functia3 = function (arg1, arg2)
  var rezultat_complicat2 = functia3(14,6)
  var rezultat_complicat3 = functia3(10,5)
 
-// a doua incercare
+// a doua incercare;
 
 function functia1CareEProdusulArgumentelor(argument1,argument2) 
     {
