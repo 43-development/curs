@@ -69,14 +69,20 @@ const Home: NextPage = () => {
     }
   ]
 
+  const afisare_magazine = (shop) =>
+    <div className="stores collapse show" id="stores">
+        {magazin(magazine[shop].titlu, magazine[shop].produse)}
+    </div>
+
   return (
     <>
       <Head>
+=======
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossOrigin="anonymous"/>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossOrigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
       </Head>
-
+=======
       <div className="foaie">
         <div className="lista titlu h1" data-bs-toggle="collapse" data-bs-target="#stores">
           <input type="text" className="shadow p-3 mb-5 bg-white rounded" value="Lista mea" />
@@ -85,6 +91,7 @@ const Home: NextPage = () => {
           {magazin('Mega Image', ["Carne", "Lapte", "Branza", "Faina", "Sampon", 'Banane'])}
           {magazin('Lidl', ['Bormasina', 'Jeleuri', 'Pasta', 'Paine', 'Cheie de 13'])}
           {magazin('Kaufland', ['Salata', 'Rosii'])}
+          {afisare_magazine}
           <div>
             <div className="magazin">
               <input type="text" />
