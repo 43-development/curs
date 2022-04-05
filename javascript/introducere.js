@@ -1,22 +1,23 @@
-console.log('am inceput')
+console.log("am inceput");
 
-var inmulteste_cu_doi
-inmulteste_cu_doi = (numarul_care_trebuie_inmultit_cu_2) => numarul_care_trebuie_inmultit_cu_2 * 2
+var inmulteste_cu_doi;
+inmulteste_cu_doi = (numarul_care_trebuie_inmultit_cu_2) =>
+  numarul_care_trebuie_inmultit_cu_2 * 2;
 
-var varsta = 14
+var varsta = 14;
 
-varsta = varsta - 6
+varsta = varsta - 6;
 
-apeleaza_functia_asta_cu_5_si_adauga_rezultatul_la_varsta(inmulteste_cu_doi)
+apeleaza_functia_asta_cu_5_si_adauga_rezultatul_la_varsta(inmulteste_cu_doi);
 
-varsta = varsta * 2
+varsta = varsta * 2;
 
+console.log(varsta);
 
-console.log(varsta)
+console.log("am terminat");
 
-console.log('am terminat')
-
-
-function apeleaza_functia_asta_cu_5_si_adauga_rezultatul_la_varsta(functia_pe_care_sa_o_apeleze) {
-    varsta = varsta + functia_pe_care_sa_o_apeleze(5)
+function apeleaza_functia_asta_cu_5_si_adauga_rezultatul_la_varsta(
+  functia_pe_care_sa_o_apeleze
+) {
+  varsta = varsta + functia_pe_care_sa_o_apeleze(5);
 }
