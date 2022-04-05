@@ -12,7 +12,7 @@
   <body>
     <div id="primul"><span>Hello, world!</span></div>
     <div id="al_doilea"><span>Hello, world!</span></div>
-    <div><span>Hello, world!</span></div>
+    <div id="al_treilea"><span>Hello, world!</span></div>
     <div><span>Hello, world!</span></div>
     <script>
       document.write("<div>Elemente create din JavaScript! 1</div>");
@@ -23,6 +23,7 @@
 
       var primul = document.getElementById("primul");
       var al_doilea = document.getElementById("al_doilea");
+      var al_treilea = document.getElementById("al_treilea");
 
       primul.style.fontSize = "3em";
 
@@ -31,9 +32,18 @@
           al_doilea.style.color = "blue";
         } else {
           al_doilea.style.color = "red";
-          al_doilea.style.fontStyle = 'normal'
         }
       });
+
+      al_treilea.addEventListener('click', () => {
+          if (al_doilea.style.fontWeight === 'bold') {
+            al_doilea.style.fontWeight = 'normal';
+            al_doilea.style.fontStyle = 'italic'
+          } else {
+            al_doilea.style.fontWeight = 'bold';
+            al_doilea.style.fontStyle = 'normal'
+          }
+      })
     </script>
     <div><span>Hello, world!</span></div>
   </body>
