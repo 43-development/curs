@@ -33,3 +33,4 @@ function trei (a, b)
     return doi 
     //sau 
 } 
+
