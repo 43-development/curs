@@ -33,6 +33,7 @@ function noulRand() {
   var element = document.getElementById("randNou");
   element.after(buton);
 
+  //
   // Pt a sterge am gasit functia de mai jos, insa cand o decomentez imi sterge primul rand.
   // Nu imi dau seama daca am omis ceva sau daca e implementata corect.
   // randNou.addEventListener('click', () => {
