@@ -42,11 +42,12 @@ document.write("<div>Elemente create din JavaScript! 5</div>");
 
 function NoulButon() {
     var Butonul = document.getElementById("primul");
-    Butonul.after("Rand Nou");
-}
+    var divul = document.createElement("div");
+    divul.innerHTML = "Un Rand Nou";
+   Butonul.after(divul);
 
-    var NoulRand = document.getElementById("Rand Nou");``
-    NoulRand.addEventListener("click", () => { NoulRand.remove(); });
+    
+    divul.addEventListener("click", () => { divul.remove(); });}
 
     
     
@@ -54,4 +55,3 @@ function NoulButon() {
 
     
 
-// nu am stiut ca atunci cand dau click de mai multe ori sa apara inca un rand nou.
