@@ -57,9 +57,16 @@
           ceva.remove()
         })
       }
-
-      adauga_paragraf('yellow')
-      adauga_paragraf('green')
+      var culoare = "blue";
+      buton_de_adaugare.addEventListener("click", () => {
+        if (culoare === "blue") {
+          culoare = "red";
+        } else {
+          culoare = "blue";
+        }
+        adauga_paragraf(culoare);
+      }
+      );
     </script>
     <div><span>Hello, world!</span></div>
   </body>
