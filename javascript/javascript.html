@@ -11,17 +11,69 @@
   </head>
   <body>
     <div id="primul"><span>Hello, world!</span></div>
-    <div id="randNou"></div>
     <div id="al_doilea"><span>Hello, world!</span></div>
     <div id="al_treilea"><span>Hello, world!</span></div>
     <div><span>Hello, world!</span></div>
+    <button id="buton_de_adaugare">adauga</button>
+    <script>
+      document.write("<div>Elemente create din JavaScript! 1</div>");
+      document.write("<div>Elemente create din JavaScript! 2</div>");
+      document.write("<div>Elemente create din JavaScript! 3</div>");
+      document.write("<div>Elemente create din JavaScript! 4</div>");
+      document.write("<div>Elemente create din JavaScript! 5</div>");
+
+      var primul_text = document.getElementById("primul");
+      var al_doilea_text = document.getElementById("al_doilea");
+      var al_treilea_text = document.getElementById("al_treilea");
+
+      primul_text.style.fontSize = "3em";
+
+      primul_text.addEventListener("click", () => {
+        if (al_doilea_text.style.color === "red") {
+          al_doilea_text.style.color = "blue";
+        } else {
+          al_doilea_text.style.color = "red";
+        }
+      });
+
+      al_treilea_text.addEventListener("click", () => {
+        if (al_doilea_text.style.fontWeight === "bold") {
+          al_doilea_text.style.fontWeight = "normal";
+          al_doilea_text.style.fontStyle = "italic";
+        } else {
+          al_doilea_text.style.fontWeight = "bold";
+          al_doilea_text.style.fontStyle = "normal";
+        }
+      });
+
+      function adauga_paragraf(culoare) {
+        var ceva = document.createElement("div");
+
+        ceva.innerHTML =
+          'Lorem ipsum dolor sit amet, <span style="background-color: ' +
+          culoare +
+          '">consectetur adipiscing</span> elit.';
+
+        primul_text.before(ceva);
+
+        ceva.addEventListener("click", () => {
+          ceva.remove();
+        });
+      }
+
+      let culoare = "red";
+      buton_de_adaugare.addEventListener("click", () => {
+        if (culoare === "red") {
+          culoare = "blue";
+        } else {
+          culoare = "red";
+        }
+        adauga_paragraf(culoare);
+      });
+
+      adauga_paragraf("yellow");
+      adauga_paragraf("green");
+    </script>
     <div><span>Hello, world!</span></div>
-    <script src="fisierjavascript.js"></script>
-    <button type="button" onclick="noulRand()" ; placeholder="Type your text">
-      Rand nou
-    </button>
-    <div>
-      <a href="pagina2.html">Pagina urmatoare</a>
-    </div>
   </body>
 </html>
