@@ -60,6 +60,16 @@
 
       adauga_paragraf('yellow')
       adauga_paragraf('green')
+      var buton_de_adaugare = document.getElementById('buton_de_adaugare');
+      var culoare_curenta = 'red';
+
+      buton_de_adaugare.addEventListener("click", () => {
+        adauga_paragraf(culoare_curenta);
+        if(culoare_curenta == 'red')
+          culoare_curenta = 'blue';
+        else culoare_curenta = 'red';
+      });
+
     </script>
     <div><span>Hello, world!</span></div>
   </body>
