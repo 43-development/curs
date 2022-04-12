@@ -1,0 +1,13 @@
+<div>
+    <div class="magazin titlu" data-bs-toggle="collapse" data-bs-target="#magazin-1">
+        <button class="btn link-danger"><i class="bi bi-x-circle"></i></button>
+        <div class="p-3 mb-2 bg-success text-white">{props.nume}</div>
+    </div>
+    <div class="cos collapse show" id="magazin-1">
+        {props.produse}
+        <div class="produs">
+            <input type="text" class="form-control" />
+            <input type="button" value="adauga" class="btn btn-warning" />
+        </div>
+    </div>
+</div>
