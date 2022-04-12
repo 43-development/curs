@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Document frumos</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- <script src="js/script.js"></script> -->
     <script>
@@ -36,30 +36,38 @@
         }
       });
 
-      al_treilea_text.addEventListener('click', () => {
-          if (al_doilea_text.style.fontWeight === 'bold') {
-            al_doilea_text.style.fontWeight = 'normal';
-            al_doilea_text.style.fontStyle = 'italic'
-          } else {
-            al_doilea_text.style.fontWeight = 'bold';
-            al_doilea_text.style.fontStyle = 'normal'
-          }
-      })
+      al_treilea_text.addEventListener("click", () => {
+        if (al_doilea_text.style.fontWeight === "bold") {
+          al_doilea_text.style.fontWeight = "normal";
+          al_doilea_text.style.fontStyle = "italic";
+        } else {
+          al_doilea_text.style.fontWeight = "bold";
+          al_doilea_text.style.fontStyle = "normal";
+        }
+      });
 
       function adauga_paragraf(culoare) {
-        var ceva = document.createElement('div')
-        
-        ceva.innerHTML = 'Lorem ipsum dolor sit amet, <span style="background-color: ' + culoare + '">consectetur adipiscing</span> elit.'
+        var ceva = document.createElement("div");
 
-        primul_text.before(ceva)
+        ceva.innerHTML =
+          'Lorem ipsum dolor sit amet, <span style="background-color: ' +
+          culoare +
+          '">consectetur adipiscing</span> elit.';
 
-        ceva.addEventListener('click', () => {
-          ceva.remove()
-        })
+        primul_text.before(ceva);
+
+        ceva.addEventListener("click", () => {
+          ceva.remove();
+        });
       }
 
-      adauga_paragraf('yellow')
-      adauga_paragraf('green')
+      var buton = document.getElementById("buton_de_adaugare");
+      var culoare;
+
+      buton.addEventListener("click", () => {
+        culoare === "red" ? (culoare = "blue") : (culoare = "red");
+        adauga_paragraf(culoare);
+      });
     </script>
     <div><span>Hello, world!</span></div>
   </body>
